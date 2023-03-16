@@ -1,0 +1,16 @@
+import state from './state'
+import * as actions from './actions'
+import * as getters from './getters'
+import * as mutations from './mutations'
+
+
+//Este es el que se termina importando donde se vaya ocupar
+const jurnalModule = {
+    namespaced: true,
+    actions,
+    getters,
+    mutations,
+    state
+}
+
+export default jurnalModule
